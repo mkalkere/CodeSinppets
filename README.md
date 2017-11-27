@@ -53,8 +53,7 @@ public static string Rgb(int r, int g, int b)
 }
 ```
 
-Description:
-
+#### Description:
 #### Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.
 
 Examples
@@ -64,7 +63,7 @@ Kata.PigIt("Hello world !");     // elloHay orldWay !
 
 ```
 public static string PigIt(string str)
-  {
-    return string.Join(" ",str.Split().Select(x=>x.Substring(1)+x[0]+"ay")); 
-  }
+{
+  return string.Join(" ",str.Split().Select(x=>x.Substring(1)+x[0]+"ay")); 
+}
 ```
