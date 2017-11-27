@@ -52,3 +52,19 @@ public static string Rgb(int r, int g, int b)
     return r.ToString("X2") + g.ToString("X2") + b.ToString("X2");
 }
 ```
+
+Description:
+
+#### Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.
+
+Examples
+
+Kata.PigIt("Pig latin is cool"); // igPay atinlay siay oolcay
+Kata.PigIt("Hello world !");     // elloHay orldWay !
+
+```
+public static string PigIt(string str)
+  {
+    return string.Join(" ",str.Split().Select(x=>x.Substring(1)+x[0]+"ay")); 
+  }
+```
